@@ -1,0 +1,9 @@
+node_modules/
+dist/
+coverage/
+site/
+*.exe
+*.obj
+*.o
+__pycache__/
+.DS_Store

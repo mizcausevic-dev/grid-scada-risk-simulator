@@ -1,0 +1,38 @@
+{
+  "estate": "Regional utility SCADA estate spanning substations, renewables telemetry, feeder automation, and outage response systems.",
+  "scenarios": [
+    {
+      "assetId": "substation-north-17",
+      "owner": "Grid operations",
+      "controlLatencyMs": 940,
+      "telemetryDriftMinutes": 41,
+      "manualOverrideCount": 7,
+      "blastRadiusCustomers": 28000,
+      "patchLagDays": 62,
+      "redundancyScore": 38,
+      "nextAction": "Move substation controls into a protected remediation window and require operator-ready rollback proof before firmware change."
+    },
+    {
+      "assetId": "solar-farm-east-telemetry",
+      "owner": "Renewables operations",
+      "controlLatencyMs": 410,
+      "telemetryDriftMinutes": 19,
+      "manualOverrideCount": 3,
+      "blastRadiusCustomers": 7400,
+      "patchLagDays": 24,
+      "redundancyScore": 67,
+      "nextAction": "Rebaseline inverter telemetry and verify drift alarms before scaling the next remote diagnostics release."
+    },
+    {
+      "assetId": "feeder-automation-west",
+      "owner": "Distribution reliability",
+      "controlLatencyMs": 260,
+      "telemetryDriftMinutes": 8,
+      "manualOverrideCount": 1,
+      "blastRadiusCustomers": 3900,
+      "patchLagDays": 11,
+      "redundancyScore": 82,
+      "nextAction": "Keep feeder automation in monitor mode while SQL incident views are reconciled with outage tickets."
+    }
+  ]
+}
