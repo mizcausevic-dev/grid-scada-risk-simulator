@@ -27,7 +27,38 @@ export function renderPage(input: ScadaInput): string {
         <p>Demo fixtures are synthetic and credential-free; the pattern is reusable for real diligence packets without exposing customer or regulated data.</p>
       </article>
     </section>
-    <footer>Primary recommendation: ${summary.primaryRecommendation}</footer></main></body></html>`;
+    <section class="proof-pack" aria-label="Product depth and shared pattern">
+      <article class="proof-card">
+        <small>Product purpose</small>
+        <h2>What this product does</h2>
+        <p>A regulated-infrastructure simulator for grid operations where SCADA posture, telemetry gaps, outage exposure, and remediation timing need to be visible before reliability risk becomes board-visible.</p>
+      </article>
+      <article class="proof-card">
+        <small>Go-to-market lens</small>
+        <h2>Why buyers would care</h2>
+        <p>For utility and infrastructure buyers, the page connects control-room signals to reliability, safety, capital planning, and executive risk posture.</p>
+      </article>
+      <article class="proof-card">
+        <small>Value architecture</small>
+        <h2>How it turns into action</h2>
+        <p>It converts grid-control issues into ranked operating decisions: what to contain, what to invest in, and what story to tell about resilience.</p>
+      </article>
+      <article class="proof-card">
+        <small>Technical proof</small>
+        <h2>How reviewers can trust it</h2>
+        <p>The proof uses synthetic grid lanes, deterministic scoring, app routes, static proof generation, and safe public artifacts.</p>
+      </article>
+      <article class="proof-card">
+        <small>What these repos have in common</small>
+        <h2>Platform complexity becomes board-ready operating proof.</h2>
+        <p>Each repo names a buyer pain, exposes an evidence model, produces a reusable artifact, and keeps the public page safe with synthetic data instead of credentials or customer exports.</p>
+      </article>
+      <article class="proof-card">
+        <small>Interlinks</small>
+        <h2>Where this fits</h2>
+        <p><a href="https://portfolio.kineticgain.com/">Portfolio</a> · <a href="https://kineticgain.com/">Kinetic Gain</a> · <a href="https://github.com/mizcausevic-dev/grid-scada-risk-simulator">GitHub</a></p>
+      </article>
+    </section><footer>Primary recommendation: ${summary.primaryRecommendation}</footer></main></body></html>`;
 }
 
 export function createApp() {
